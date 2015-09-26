@@ -1,0 +1,42 @@
+@media screen and (max-width: 540px) {
+
+	.menu {
+		display: block;
+		color: #305782;
+		background-color: #d5dce4;
+		padding: 10px;
+		text-align: center;
+		cursor: pointer;
+		margin: 0px;
+	}	
+	
+	.navigation{ 
+		display: none;
+		margin: 0px;
+	}
+
+	nav ul li {
+		width: 100%;
+	
+		border-bottom: 1px solid white;
+
+	}
+
+	nav ul li:last-child {
+		border-bottom: none;
+	}
+
+	.nav-expanded {
+		display: block;
+	}
+
+	a {
+	text-align: left;
+	text-decoration: none;
+	color: white;
+	width: 500px;
+	margin: 0px;
+	padding: 10px;
+	}
+
+}

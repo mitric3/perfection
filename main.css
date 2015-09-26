@@ -1,0 +1,828 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	padding-top: 57px;
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position:  0 100%; }
+}
+
+.header {
+	width: 100%;
+	margin: auto;
+	height: 200px;
+	background: url(images/metal.jpg);
+	background-position: 0px 0px;
+	animation: animatedBackground 40s linear infinite;
+	margin-bottom: 0px;
+}
+
+.header2 {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+.header .navigation {
+	top: 0;
+}
+.navigation {
+	transition: 0.5s;
+	color: black;
+	background: rgb(193,31,23); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(193,31,23,1) 0%, rgba(213,35,25,1) 12%, rgba(229,41,31,1) 25%, rgba(186,30,22,1) 39%, rgba(147,24,17,1) 50%, rgba(82,13,10,1) 51%, rgba(107,17,13,1) 60%, rgba(123,20,15,1) 91%, rgba(109,18,13,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(193,31,23,1)), color-stop(12%,rgba(213,35,25,1)), color-stop(25%,rgba(229,41,31,1)), color-stop(39%,rgba(186,30,22,1)), color-stop(50%,rgba(147,24,17,1)), color-stop(51%,rgba(82,13,10,1)), color-stop(60%,rgba(107,17,13,1)), color-stop(91%,rgba(123,20,15,1)), color-stop(100%,rgba(109,18,13,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(193,31,23,1) 0%,rgba(213,35,25,1) 12%,rgba(229,41,31,1) 25%,rgba(186,30,22,1) 39%,rgba(147,24,17,1) 50%,rgba(82,13,10,1) 51%,rgba(107,17,13,1) 60%,rgba(123,20,15,1) 91%,rgba(109,18,13,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(193,31,23,1) 0%,rgba(213,35,25,1) 12%,rgba(229,41,31,1) 25%,rgba(186,30,22,1) 39%,rgba(147,24,17,1) 50%,rgba(82,13,10,1) 51%,rgba(107,17,13,1) 60%,rgba(123,20,15,1) 91%,rgba(109,18,13,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(193,31,23,1) 0%,rgba(213,35,25,1) 12%,rgba(229,41,31,1) 25%,rgba(186,30,22,1) 39%,rgba(147,24,17,1) 50%,rgba(82,13,10,1) 51%,rgba(107,17,13,1) 60%,rgba(123,20,15,1) 91%,rgba(109,18,13,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(193,31,23,1) 0%,rgba(213,35,25,1) 12%,rgba(229,41,31,1) 25%,rgba(186,30,22,1) 39%,rgba(147,24,17,1) 50%,rgba(82,13,10,1) 51%,rgba(107,17,13,1) 60%,rgba(123,20,15,1) 91%,rgba(109,18,13,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c11f17', endColorstr='#6d120d',GradientType=0 );
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	box-shadow: 0px 5px 40px;
+}
+
+.navigation a:hover{
+	transition: 0.5s;
+	color: #60cdea;
+	text-shadow: 5px 5px 20px #60cdea,
+				-5px -5px 20px #60cdea;
+	border-left: 1px solid #60cdea;
+	border-right: 1px solid #60cdea;
+	background: rgb(90,90,90); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(90,90,90,1) 0%, rgba(102,102,102,1) 12%, rgba(114,114,114,1) 25%, rgba(86,86,86,1) 39%, rgba(61,61,61,1) 50%, rgba(20,20,20,1) 51%, rgba(36,36,36,1) 60%, rgba(46,46,46,1) 91%, rgba(38,38,38,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(90,90,90,1)), color-stop(12%,rgba(102,102,102,1)), color-stop(25%,rgba(114,114,114,1)), color-stop(39%,rgba(86,86,86,1)), color-stop(50%,rgba(61,61,61,1)), color-stop(51%,rgba(20,20,20,1)), color-stop(60%,rgba(36,36,36,1)), color-stop(91%,rgba(46,46,46,1)), color-stop(100%,rgba(38,38,38,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(90,90,90,1) 0%,rgba(102,102,102,1) 12%,rgba(114,114,114,1) 25%,rgba(86,86,86,1) 39%,rgba(61,61,61,1) 50%,rgba(20,20,20,1) 51%,rgba(36,36,36,1) 60%,rgba(46,46,46,1) 91%,rgba(38,38,38,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(90,90,90,1) 0%,rgba(102,102,102,1) 12%,rgba(114,114,114,1) 25%,rgba(86,86,86,1) 39%,rgba(61,61,61,1) 50%,rgba(20,20,20,1) 51%,rgba(36,36,36,1) 60%,rgba(46,46,46,1) 91%,rgba(38,38,38,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(90,90,90,1) 0%,rgba(102,102,102,1) 12%,rgba(114,114,114,1) 25%,rgba(86,86,86,1) 39%,rgba(61,61,61,1) 50%,rgba(20,20,20,1) 51%,rgba(36,36,36,1) 60%,rgba(46,46,46,1) 91%,rgba(38,38,38,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(90,90,90,1) 0%,rgba(102,102,102,1) 12%,rgba(114,114,114,1) 25%,rgba(86,86,86,1) 39%,rgba(61,61,61,1) 50%,rgba(20,20,20,1) 51%,rgba(36,36,36,1) 60%,rgba(46,46,46,1) 91%,rgba(38,38,38,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a5a5a', endColorstr='#262626',GradientType=0 );
+}
+
+.navigation a.keep{
+	transition: 0.5s;
+	color: #60cdea;
+	text-shadow: 5px 5px 20px #60cdea,
+				-5px -5px 20px #60cdea;
+	border-left: 1px solid #60cdea;
+	border-right: 1px solid #60cdea;
+	background: -moz-linear-gradient(top, rgba(90,90,90,1) 0%, rgba(102,102,102,1) 12%, rgba(114,114,114,1) 25%, rgba(86,86,86,1) 39%, rgba(61,61,61,1) 50%, rgba(20,20,20,1) 51%, rgba(36,36,36,1) 60%, rgba(46,46,46,1) 91%, rgba(38,38,38,1) 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(90,90,90,1)), color-stop(12%,rgba(102,102,102,1)), color-stop(25%,rgba(114,114,114,1)), color-stop(39%,rgba(86,86,86,1)), color-stop(50%,rgba(61,61,61,1)), color-stop(51%,rgba(20,20,20,1)), color-stop(60%,rgba(36,36,36,1)), color-stop(91%,rgba(46,46,46,1)), color-stop(100%,rgba(38,38,38,1))) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(90,90,90,1) 0%,rgba(102,102,102,1) 12%,rgba(114,114,114,1) 25%,rgba(86,86,86,1) 39%,rgba(61,61,61,1) 50%,rgba(20,20,20,1) 51%,rgba(36,36,36,1) 60%,rgba(46,46,46,1) 91%,rgba(38,38,38,1) 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(90,90,90,1) 0%,rgba(102,102,102,1) 12%,rgba(114,114,114,1) 25%,rgba(86,86,86,1) 39%,rgba(61,61,61,1) 50%,rgba(20,20,20,1) 51%,rgba(36,36,36,1) 60%,rgba(46,46,46,1) 91%,rgba(38,38,38,1) 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(90,90,90,1) 0%,rgba(102,102,102,1) 12%,rgba(114,114,114,1) 25%,rgba(86,86,86,1) 39%,rgba(61,61,61,1) 50%,rgba(20,20,20,1) 51%,rgba(36,36,36,1) 60%,rgba(46,46,46,1) 91%,rgba(38,38,38,1) 100%) !important; /* IE10+ */
+	background: linear-gradient(to bottom, rgba(90,90,90,1) 0%,rgba(102,102,102,1) 12%,rgba(114,114,114,1) 25%,rgba(86,86,86,1) 39%,rgba(61,61,61,1) 50%,rgba(20,20,20,1) 51%,rgba(36,36,36,1) 60%,rgba(46,46,46,1) 91%,rgba(38,38,38,1) 100%) !important; /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a5a5a', endColorstr='#262626',GradientType=0 );
+}
+
+.navigation li{
+	float: left;
+	list-style: none;
+}
+
+.navigation ul {
+	width: 960px;
+	margin: auto;
+}
+
+.navigation a{
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 18px;
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	width: 231px;
+	font-size: 18px;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+}
+
+.main {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.naslov{
+	color: #880016;
+	font-size: 34px;
+	border-bottom: 1px solid #880016;
+	margin-bottom: 40px;
+}
+
+.drugiNaslov{
+	color: orange;
+	font-size: 34px;
+	border-bottom: 1px solid orange;
+	margin-bottom: 40px;
+}
+
+.treciNaslov{
+	color: green;
+	font-size: 34px;
+	border-bottom: 1px solid green;
+	margin: 40px 0 40px 0;
+}
+
+.hala{
+	width: 960px;
+	margin: 0;
+}
+
+.text {
+	margin-top: 40px;
+	text-align: left;
+	letter-spacing: 2px;
+}
+
+.pm{
+	margin: 20px 0 20px 0;
+}
+
+.mani {
+	visibility: hidden;
+}
+
+
+/* PROIZVODI
+==========================================
+*/
+
+.gallery_wrapper {
+	width: 960px;
+	margin: 60px auto;
+}
+
+.udarni{
+	width: 960px;
+}
+
+.noseci{
+	float: left;
+	margin-top: 5px;
+}
+
+.noseci img{
+	width: 475px;
+	height: 280px;
+	float: left;
+	margin-right: 5px;
+}
+
+.unutrasnji {
+	width: 475px;
+	height: 280px;
+	position: absolute;
+	background-color: green;
+	opacity: 0;
+	transition: 0.8s;
+}
+
+.unutrasnji2{
+	width: 475px;
+	height: 280px;
+	position: absolute;
+	background-color: red;
+	opacity: 0;
+	transition: 0.8s;
+}
+
+.unutrasnji2 p{
+	position: absolute;
+	color: #fff;
+	font-size: 24px;
+	padding: 20px 30px;
+	border: 9px solid #fff;
+	margin-top: 95px;
+	margin-left: 75px;
+}
+
+.unutrasnji2:hover{
+	opacity: 0.7;
+}
+
+.unutrasnji3{
+	width: 475px;
+	height: 280px;
+	position: absolute;
+	background-color: grey;
+	opacity: 0;
+	transition: 0.8s;
+}
+
+.unutrasnji3 p{
+	position: absolute;
+	color: #fff;
+	font-size: 24px;
+	padding: 20px 30px;
+	border: 9px solid #fff;
+	margin-top: 95px;
+	margin-left: 75px;
+}
+
+.unutrasnji4{
+	width: 475px;
+	height: 280px;
+	position: absolute;
+	background-color: #ffe500;
+	opacity: 0;
+	transition: 0.8s;
+}
+
+.unutrasnji4 p{
+	position: absolute;
+	color: #fff;
+	font-size: 24px;
+	padding: 20px 30px;
+	border: 9px solid #fff;
+	margin-top: 95px;
+	margin-left: 75px;
+}
+
+.unutrasnji4:hover{
+	opacity: 0.8;
+	transition: 0.8s;
+}
+
+.unutrasnji3:hover{
+	opacity: 0.7;
+	transition: 0.8s;
+}
+
+.unutrasnji:hover{
+	opacity: 0.8;
+	transition: 0.8s;
+}
+
+.unutrasnji p{
+	position: absolute;
+	color: #fff;
+	font-size: 24px;
+	padding: 20px 30px;
+	border: 9px solid #fff;
+	margin-top: 95px;
+	margin-left: 60px;
+}
+
+.unutrasnji5{
+	width: 475px;
+	height: 280px;
+	position: absolute;
+	background-color: #ef7126;
+	opacity: 0;
+	transition: 0.8s;
+}
+
+.unutrasnji5 p{
+	position: absolute;
+	color: #fff;
+	font-size: 24px;
+	padding: 20px 30px;
+	border: 9px solid #fff;
+	margin-top: 95px;
+	margin-left: 75px;
+}
+
+.unutrasnji5:hover{
+	opacity: 0.7;
+}
+
+.unutrasnji6{
+	width: 475px;
+	height: 280px;
+	position: absolute;
+	background-color: #41aac4;
+	opacity: 0;
+	transition: 0.8s;
+}
+
+.unutrasnji6 p{
+	position: absolute;
+	color: #fff;
+	font-size: 24px;
+	padding: 20px 30px;
+	border: 9px solid #fff;
+	margin-top: 95px;
+	margin-left: 75px;
+}
+
+.unutrasnji6:hover{
+	opacity: 0.7;
+}
+
+
+/* lajsne 
+======================================
+*/
+
+.lajs {
+	width: 960px;
+	margin: auto;
+}
+	/* === two i tri izmestanje elementa
+		u levu i desnu stranu radi animacije
+	=== */
+
+.sakrij{
+	position: absolute;
+	display: none;
+}
+
+.jedan {
+	width: 200px;
+	text-align: center;
+	float: left;
+	position: relative;
+	left: -600px;
+	margin: 20px;
+	opacity: 0;
+	display: inline;
+}
+.dva {
+	width: 200px;
+	text-align: center;
+	float: left;
+	position: relative;
+	left: -600px;
+	margin: 20px;
+	opacity: 0;
+	display: inline;
+}
+.tri{
+	width: 200px;
+	text-align: center;
+	float: left;
+	position: relative;
+	right: -600px;
+	margin: 20px;
+	opacity: 0;
+	display: inline;
+}
+.cetiri{
+	width: 200px;
+	text-align: center;
+	float: left;
+	position: relative;
+	right: -600px;
+	margin: 20px;
+	opacity: 0;
+	display: inline;
+}
+
+.pet {
+	width: 200px;
+	text-align: center;
+	float: left;
+	position: relative;
+	right: -1200px;
+	margin: 20px;
+	opacity: 0;
+	display: inline;
+}
+
+.sest {
+	width: 200px;
+	text-align: center;
+	float: left;
+	position: relative;
+	left: -600px;
+	margin: 20px;
+	opacity: 0;
+	display: inline;
+}
+
+.lajs figure {
+	width: 220px;
+	height: 180px;
+	margin-top: 40px;
+}
+
+.lajs img {
+	width: 220px;
+	height: 180px;
+	transition: all 0.5s;
+	position: relative;
+	border-bottom: 1px solid #705656;
+	margin-bottom: 0px;
+	bottom: 0px;
+}
+
+.lajs figure figcaption {
+	height: 30px;
+	padding-top: 10px;
+	margin-top: -6px;
+	transition:0.7s;
+}
+
+.lajs figure:hover figcaption{
+	background-color: #b20c0c;
+	color: #fff;
+	width: 220px;
+	height: 30px;
+	transition:0.7s;
+}
+
+.lajs figure:hover img{
+	border-bottom: 1px solid #b20c0c;
+}
+
+/*===========================================
+hide sides of products
+*/
+ 
+
+
+/*========PVC OGRADE===========================*/
+
+.ograde{
+	width: 960px;
+	margin: auto;
+}
+
+.ograde h1{
+	margin-top: 30px;
+}
+
+h1{
+	color: #880016;
+	margin: 10px 0 0px 0;
+}
+
+.hola {
+	color: #333333;
+	padding-bottom: 30px;
+	text-align: justify;
+	width: 960px;
+}
+
+#sraf {
+	display: block;
+	float: right;
+	width: 220px;
+	margin: 0 0 10px 20px;
+}
+
+#slika figcaption {
+	color: green;
+}
+
+#montaza {
+	margin-top: 20px;
+	height: 300px;
+}
+
+#montaza h2{
+	padding: 0 0 20px 0;
+	color: #880016;
+}
+
+.frame {
+	width: 460px;
+	display: block;
+	float: left;
+	border: 1px solid grey;
+	margin: 10px 20px 10px 0;
+}
+
+.ograda_text{
+	display: inline;
+	float: right;
+	text-align: justify;
+	width: 460px;
+}
+
+.dole{
+	margin-bottom: 35px;
+}
+
+#home {
+	width: 475px;
+	display: inline;
+	float: left;
+	margin-top: 40px;
+}
+
+#home2 {
+	width: 475px;
+	display: inline;
+	float: left;
+}
+
+#home3{
+	width: 475px;
+	height: 282px;
+	margin-top: 40px;
+	display: block;
+	float: left;
+	margin-left: 10px;
+}
+
+#slika {
+	display: block;
+	float: right;
+	width: 230px;
+	margin: 0 0 10px 20px;
+	text-align: center;
+}
+
+#ogradaPrimer{
+	text-align: left;
+	padding-top: 20px;
+	border-top: 1px solid #333333;
+}
+
+.dimenzije {
+	border-top: 1px solid black;
+	margin-top: 20px;
+	width: 960px;
+	position: relative;
+	display: inline;
+}
+
+#naslov1{
+	padding: 20px 0 20px 0;
+	border-top: 1px solid #333333;
+}
+
+.boja {
+	position: relative;
+	width: 960px;
+	display: inline;
+}
+
+.view img{
+	width: 310px;
+	display: inline;
+	display: absolute;
+}
+
+.view{
+	width: 310px;
+	display: inline;
+	position: relative;
+}
+.mask{
+	text-align: center;
+	position: absolute;
+	display: inline;
+	background-color: #333333;
+	width: 310px;
+	height: 180px;
+	color: #fff;
+	border: 1px solid white;
+	opacity: 0;
+	transition: 0.8s;
+}
+
+.mask p {
+	border: 1px solid #fff;
+	margin-top: 60px;
+	padding: 20px 30px;
+	margin-left: 60px;
+	width: 130px;
+	background-color: #880016;
+}
+
+.mask:hover{
+	opacity: 0.9;
+	transition: 0.8s;
+}
+
+.kraj{
+	width: 960px;
+	height: 395px;
+}
+
+.pravA{
+	background-color: #6e6e75;
+	width: 960px;
+	height: 30px;
+	text-align: center;
+	color: white;
+	padding-top: 3px;
+}
+
+/*=========== ALATI ==============*/
+.alati{
+	width: 960px;
+	margin: auto;
+}
+
+.naslov_alati{	
+	margin: 30px 0 0px 0;
+	padding-bottom: 20px;
+}
+
+.alat1 {
+	width: 470px;
+}
+
+.alati_text {
+	margin: 10px 0 40px 0;
+	letter-spacing: 2px;
+	float: left;
+	padding: 0 10px 0 0;
+}
+
+.slike_alati{
+	text-align: center;
+	width: 470px;
+	display: inline;
+	float: left;
+	margin-left: 3px;
+}
+
+.slike_alati figcaption{
+	padding-top: 15px;
+	transition: 0.8s;
+}
+
+.slike_alati:hover .Alat1{
+	background-color: #333;
+	color: white;
+	transition: 0.8s;
+}
+.slike_alati:hover .Alat2{
+	background-color:  #00acbf;
+	color: white;
+	transition: 0.8s;
+}.slike_alati:hover .Alat3{
+	background-color: orange;
+	color: white;
+	transition: 0.8s;
+}.slike_alati:hover .Alat4{
+	background-color: green;
+	color: white;
+	transition: 0.8s;
+}.slike_alati:hover .Alat5{
+	background-color: #880016;
+	color: white;
+	transition: 0.8s;
+}
+.Alat1{
+	border-top: 2px solid #333;
+	padding-bottom: 15px;
+	transition: 0.8s;
+}
+.Alat2{
+	border-top: 2px solid #00acbf;
+	padding-bottom: 15px;
+	transition: 0.8s;
+}
+.Alat3{
+	border-top: 2px solid orange;
+	padding-bottom: 15px;
+	transition: 0.8s;
+}
+.Alat4{
+	border-top: 2px solid green;
+	padding-bottom: 15px;
+	transition: 0.8s;
+}
+.Alat5{
+	border-top: 2px solid #880016;
+	padding-bottom: 15px;
+	transition: 0.8s;
+}
+
+
+/*========== KONTAKT ==================== */
+
+
+.main {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.main figcaption{
+	color: #333333;
+	letter-spacing: 1px;
+}
+
+.telefon{
+	text-align: center;
+	margin-top: 10px;
+	width: 200px;
+	float: left;
+	position: ;
+}
+
+.mail{
+	float: right;
+	margin-top: 15px;
+	width: 200px;
+	text-align: center;
+}
+
+.building{
+	float: left;
+	margin-top: 15px;
+	width: 260px;
+	text-align: center;
+	margin-left: 90px; 
+}
+
+.building figcaption{
+	margin-left: 90px;
+	width: 230px;
+}
+
+.building img{
+	margin-top: -15px;
+}
+
+.telefon img{
+	margin-bottom: 20px;
+}
+
+.mail img{
+	margin-bottom: 20px;
+}
+
+.main img:hover{
+	-ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+.brojevi{
+	border-top: 1px solid #810016;
+	padding-top: 20px;
+	position: absolute;
+	margin-top: 100px; 
+	opacity: 0;
+	transition:1s;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 30px;
+	width: 450px;
+}
+
+.telefon:hover .brojevi{
+	opacity: 1;
+	margin-top: 20px;
+	transition: 1.5s;
+}
+
+.lokacija{
+	border-top: 1px solid #810016;
+	padding-top: 20px;
+	position: absolute;
+	margin-top: 100px; 
+	opacity: 0;
+	transition:1s;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 30px;
+	z-index: 9999;
+	width: 450px;
+}
+
+.building:hover .lokacija{
+	padding-top: 20px;
+	opacity: 1;
+	margin-top: 20px;
+	transition: 1.5s;
+}
+
+.posta{
+	border-top: 1px solid #810016;
+	padding-top: 20px;
+	position: absolute;
+	margin-top: 100px; 
+	opacity: 0;
+	transition:1s;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 30px;
+	z-index: 9999;
+	width: 400px;
+}
+
+.mail:hover .posta{
+	opacity: 1;
+	margin-top: 20px;
+	width: 350px;
+	transition: 1.5s;
+}
+
+iframe {
+	width:100%;
+	height: 300px;
+	color: #333;
+	background-color: #333;
+}
+
+.tride{
+	width: 960px;
+	position: relative;
+	margin: 0 20%;
+}
+
